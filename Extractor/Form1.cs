@@ -54,5 +54,13 @@ namespace Extractor
                 AlphaPath.Text = alphaPath;
             }
         }
+
+        private void ToSprites_Click(object sender, EventArgs e)
+        {
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+                //do something
+            }
+        }
     }
 }

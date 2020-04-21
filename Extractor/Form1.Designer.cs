@@ -36,6 +36,7 @@
             this.RGBPath = new System.Windows.Forms.Label();
             this.AlphaPath = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.SuspendLayout();
             // 
             // XMLFile
@@ -76,6 +77,7 @@
             this.ToSprites.TabIndex = 3;
             this.ToSprites.Text = "ToSprites";
             this.ToSprites.UseVisualStyleBackColor = true;
+            this.ToSprites.Click += new System.EventHandler(this.ToSprites_Click);
             // 
             // XMLPath
             // 
@@ -135,6 +137,7 @@
         private System.Windows.Forms.Label RGBPath;
         private System.Windows.Forms.Label AlphaPath;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
     }
 }
 
