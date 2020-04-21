@@ -37,6 +37,8 @@
             this.AlphaPath = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.FolderLabel = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // XMLFile
@@ -75,7 +77,7 @@
             this.ToSprites.Name = "ToSprites";
             this.ToSprites.Size = new System.Drawing.Size(111, 43);
             this.ToSprites.TabIndex = 3;
-            this.ToSprites.Text = "ToSprites";
+            this.ToSprites.Text = "OutputPath";
             this.ToSprites.UseVisualStyleBackColor = true;
             this.ToSprites.Click += new System.EventHandler(this.ToSprites_Click);
             // 
@@ -107,11 +109,31 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // FolderLabel
+            // 
+            this.FolderLabel.AutoSize = true;
+            this.FolderLabel.Location = new System.Drawing.Point(221, 279);
+            this.FolderLabel.Name = "FolderLabel";
+            this.FolderLabel.Size = new System.Drawing.Size(0, 15);
+            this.FolderLabel.TabIndex = 7;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(64, 338);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(111, 80);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Do";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.FolderLabel);
             this.Controls.Add(this.AlphaPath);
             this.Controls.Add(this.RGBPath);
             this.Controls.Add(this.XMLPath);
@@ -138,6 +160,8 @@
         private System.Windows.Forms.Label AlphaPath;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.Windows.Forms.Label FolderLabel;
+        private System.Windows.Forms.Button button1;
     }
 }
 
