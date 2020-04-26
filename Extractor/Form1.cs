@@ -93,6 +93,11 @@ namespace Extractor
                        
                         image_rgb.Crop(g);
                         image_rgb.Composite(image_a, CompositeOperator.CopyAlpha);
+                        int i = 1;
+                        while(i < Math.Max(s.w, s.h)){
+                            i = i * 2;
+                        }
+                        image_rgb.Extent(new MagickGeometry(-(i / 2 - s.w / 2), -(i / 2 -s.h / 2), i, i), MagickColor.FromRgba(255,255,255,0));
                         image_rgb.Write(folderPath + "/" + s.n);
                         
                     }
